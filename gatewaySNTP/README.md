@@ -13,18 +13,6 @@ This project implements a Bluetooth Low Energy (BLE) observer device based on Ze
 - LED indication for packet reception and status
 - Circular buffer implementation in flash for efficient data handling
 
-## Hardware Requirements
-- Board supported by Zephyr RTOS
-- External SPI flash memory
-- GSM/cellular module for connectivity
-- LEDs for status indication (led0, led2)
-- BLE radio capability
-
-## System Architecture
-The system consists of two main components:
-1. **BLE Observer** - Scans for BLE advertisements, filters them, and stores them in flash memory
-2. **AWS IoT Client** - Reads data from flash and publishes it to AWS IoT
-
 ## Configuration
 The following configuration parameters can be adjusted in your project's configuration:
 
@@ -81,28 +69,6 @@ The system uses Zephyr's work queues and threads:
 - Shadow update work: Scheduled periodically to publish data
 - Connect work: Manages AWS IoT connectivity
 - Mutex protection for flash operations
-
-## Building and Running
-This project is built with the Zephyr RTOS build system.
-
-1. Set up Zephyr development environment
-2. Configure your project with the appropriate overlay files
-3. Build the project:
-   ```
-   west build -b <your_board>
-   ```
-4. Flash the application:
-   ```
-   west flash
-   ```
-
-## Dependencies
-- Zephyr RTOS
-- Bluetooth drivers
-- SPI Flash drivers
-- AWS IoT SDK
-- GSM/MQTT connectivity modules
-- JSON library for data formatting
 
 ## Custom Modules
 - `observer.h`: Main BLE scanning functionality
