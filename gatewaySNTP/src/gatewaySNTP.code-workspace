@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"name": "hci_rpmsg",
+			"path": "../../../../hci_rpmsg/hci_rpmsg"
+		}
+	],
+	"settings": {
+		"nrf-connect.topdir": "${nrf-connect.sdk:2.5.1}",
+		"nrf-connect.toolchain.path": "${nrf-connect.toolchain:2.5.1}"
+	}
+}

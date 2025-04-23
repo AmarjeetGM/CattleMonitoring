@@ -1,0 +1,25 @@
+
+menu "BASE_FILE"
+config BLE_ADD
+    string "BLE address"
+    default "DE:AD:BE:AF:BA:11"
+
+config BLE_RECEIVING_PAYLOAD
+	int "BLE Receiving payload Size"
+	default 32
+
+config DEVICE_ID
+	int "Device Local ID"
+	default 100
+config GROUP_ID
+	int "Device Local ID"
+	default 0
+
+config FLASH_READ_ADD
+	int "stores last read_index at flash address"
+	default 1048576
+
+config FLASH_WRITE_ADD
+	int "stores last write_index at flash address"
+	default 1052672
+endmenu    
