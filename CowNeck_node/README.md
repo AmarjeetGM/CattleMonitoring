@@ -2,11 +2,11 @@ Bluetooth Low Energy Accelerometer Data Advertisement
 
  Overview
 
-This application demonstrates collection and advertisement of accelerometer data over Bluetooth Low Energy (BLE) using the Zephyr RTOS. The system collects accelerometer data from an ST LIS2DH sensor and periodically transmits it using extended advertising features of Bluetooth 5.0.
+This application demonstrates collection and advertisement of accelerometer data over Bluetooth Low Energy (BLE) using the Zephyr RTOS. The system collects accelerometer data from an ST LIS3DH sensor and periodically transmits it using extended advertising features of Bluetooth 5.0.
 
  Key Features
 
-- **Accelerometer Data Collection**: Captures X, Y, Z axis data from ST LIS2DH sensor
+- **Accelerometer Data Collection**: Captures X, Y, Z axis data from ST LIS3DH sensor
 - **Extended Advertising**: Utilizes BLE extended advertising to transmit large chunks of sensor data
 - **Data Chunking**: Splits data into multiple advertisement packets for transmission
 - **Configurable Parameters**: Customizable sampling frequency and device identification
@@ -14,7 +14,7 @@ This application demonstrates collection and advertisement of accelerometer data
  Hardware Requirements
 
 - nRF52 series development board (or compatible)
-- ST LIS2DH accelerometer sensor
+- ST LIS3DH accelerometer sensor
 - Bluetooth 5.0 compatible receiver device
 
  Configuration Parameters
