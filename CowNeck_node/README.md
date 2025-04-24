@@ -1,6 +1,6 @@
-Bluetooth Low Energy Accelerometer Data Advertisement
+********Bluetooth Low Energy Accelerometer Data Advertisement************
 
- Overview
+ ****Overview****
 
 This application demonstrates collection and advertisement of accelerometer data over Bluetooth Low Energy (BLE) using the Zephyr RTOS. The system collects accelerometer data from an ST LIS3DH sensor and periodically transmits it using extended advertising features of Bluetooth 5.0.
 
